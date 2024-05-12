@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.expand {
+		@apply hover:scale-[102%]
+	}
+
+  .logo {
+    letter-spacing:1rem;
+  }
+
+  @keyframes slideFromTop {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+    @keyframes slideToTop {
+      /* from {
+        transform: translateY(0%);
+        opacity: 1;
+      } */
+      to {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+    }
+    @keyframes popin {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    }
+    @keyframes translateFadeIn {
+    from {
+      transform: translateY(-10px); /* Replace with your starting value */
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    }
+    .translate-fade-in {
+    animation: translateFadeIn 1s ease-in-out forwards;
+    }
+    .increment-delay li:nth-child(1) { transition-delay:500ms }
+  .increment-delay li:nth-child(2) { transition-delay: 700ms }
+  .increment-delay li:nth-child(3) { transition-delay: 900ms }
+    .slideInTop {
+      animation: slideToTop 0.5s forwards;
+    }
+    .pop {
+    animation: popin 0.5s forwards;
+    }
+    .slideOutTop {
+      animation: slideFromTop 0.5s forwards;
+    }
+}
+
