@@ -22,18 +22,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={redHat.className}>
-				<Navbar
-					pages={
-						new Map([
-							["/", "Home"],
-							["/projects", "Projects"],
-							["/team", "Team"],
-              ["/contact", "Contact"]
-						])
-					}
-				/>
+				
 				{children}
-				<Footer />
+				
 			</body>
 		</html>
 	);
