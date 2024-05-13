@@ -66,7 +66,7 @@ export default function Home() {
           <div className="bg-blue-900 w-4/5 h-2/5 rounded-lg mt-2 m-2"></div>
         
         </div>
-        <div className="w-full md:w-1/2 p-10 flex flex-col justify-center items-center">
+        <div className="w-full md:w-1/2 p-10 flex flex-col justify-center items-center" >
           <h2 className="text-5xl font-bold text-blue-500 mb-20">Our Impact</h2>
             
             <p className="font-bold text-5xl">700</p>
@@ -84,9 +84,9 @@ export default function Home() {
         <div className="w-full h-full md:w-1/2 p-10 flex flex-col justify-center items-center">
           <h2 className="text-7xl font-bold text-blue-500">Our Impact</h2>
 
-          <div className="w-full h-1/2 flex flex-row items-center justify-center space-x-36 mt-20">
-              <div className="flex flex-col items-center justify-center ">
-                <p className="font-bold text-7xl">700</p>
+          <div className="w-full h-1/2 flex flex-row items-center justify-center space-x-28 mt-20">
+              <div className="flex flex-col items-center">
+                <p className=" font-bold text-7xl">700</p>
                 <p className="mb-5 text-2xl text-navy">People</p>
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -125,25 +125,25 @@ export default function Home() {
           </section>
           <section className="mb-8 mx-10">
             <h2 className="text-2xl font-semibold mb-4">PC Distribution</h2>
-            <p className="text-lg mb-6">
+            <p className="text-md md:text-lg mb-6">
               Donation of PCs to schools in underprivileged areas, like the initial contribution of 4 PCs to a public school in Almora, facilitating digital access for over 300 villagers.
             </p>
           </section>
           <section className="mb-8 mx-10">
-            <h2 className="text-2xl font-semibold mb-4">AI-Driven Learning Platform</h2>
-            <p className="text-lg mb-6">
+            <h2 className="text-xl md:text-2xl font-semibold mb-4">AI-Driven Learning Platform</h2>
+            <p className="text-md md:text-lg mb-6">
               Development of an AI-powered platform to teach essential skills such as coding and financial literacy, set to benefit over 2000 students in collaboration with partners like the Laksh Foundation and Pathways School Noida.
             </p>
           </section>
           <section className="mb-8 mx-10">
-            <h2 className="text-2xl font-semibold mb-4">Hardware Collection Drive</h2>
-            <p className="text-lg mb-6">
+            <h2 className="text-xl md:text-2xl font-semibold mb-4">Hardware Collection Drive</h2>
+            <p className="text-md md:text-lg mb-6">
               Collection and refurbishment of over 10 computers and various tech gadgets for educational use, in partnership with communities like ATS Hamlet and ATS Village.
             </p>
           </section>
           <section className="mx-10">
-            <h2 className="text-2xl font-semibold mb-4">Fundraising Initiatives</h2>
-            <p className="text-lg mb-6">
+            <h2 className="text-xl md:text-2xl font-semibold mb-4">Fundraising Initiatives</h2>
+            <p className="text-md md:text-lg mb-6">
               Successful execution of fundraising activities, including bake sales, generating significant funds towards enhancing digital literacy and infrastructure.
             </p>
           </section>
@@ -164,10 +164,10 @@ export default function Home() {
     </div>
       
       <div id ="contact" className="min-h-screen w-screen bg-dark-blue flex flex-col items-center justify-center">
-        <h1 className="text-white text-5xl md:text-8xl font-bold">Contact Us</h1>
+        <h1 className="text-white text-5xl md:text-8xl font-bold ">Contact Us</h1>
 
        
-        <div className="bg-white p-8 rounded-lg shadow-lg mt-8 max-w-lg w-full">
+        <div className="bg-white p-8 rounded-lg shadow-lg mt-8 max-w-lg w-4/5">
           <form>
             <div className="mb-4">
               <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
