@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Impact from "./components/Impact";
 export default function Home() {
 
   const teamMembers = [
@@ -40,45 +42,9 @@ export default function Home() {
 						])
 					}
 				/>
-      <div id="/" className="h-screen w-screen bg-dark-blue flex items-center  justify-center">
-        <div className=" mx-10 p-6 flex flex-col md:flex-row  items-center space-y-20 md:space-y-0">
-          <div className="mt-6 mr-6">
-            <h1 className="text-white text-5xl md:text-7xl font-bold mb-2">Together, We Build a Brighter Tomorrow</h1>
-            <p className="text-gray-300 text-xl">Welcome to Project Dosti, a nonprofit dedicated to uplifting communities.</p>
-            <div className="flex flex-row space-x-5 mt-5 items-center text-white">
-              <p className="bg-navy py-2 md:py-5 px-10 rounded-full">Donate</p>
-              <p className="bg-navy py-2 md:py-5 px-10 rounded-full ">Contact Us</p>
-            </div>
-          </div>
-          <div className="rounded-full overflow-hidden  md:w-3/4 bg-white ">
-            <img
-              src="/images/happy-family.png"
-              alt="Image Description"
-              className="w-full"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="h-screen w-screen bg-white  flex-col md:flex-row hidden md:flex">
-        <div className="w-full  md:w-1/2  bg-blue-500 flex flex-col justify-center items-center">
-       
-          <div className="bg-blue-900 w-4/5 min-w-64  h-2/5 rounded-lg mt-2 m-2"></div>
-          <div className="bg-blue-900 w-4/5 h-2/5 rounded-lg mt-2 m-2"></div>
-        
-        </div>
-        <div className="w-full md:w-1/2 p-10 flex flex-col justify-center items-center" >
-          <h2 className="text-5xl font-bold text-blue-500 mb-20">Our Impact</h2>
-            
-            <p className="font-bold text-5xl">700</p>
-            <p className="mb-5 text-navy">People</p>
-            <p className="font-bold text-5xl">2000</p>
-            <p className="mb-5  text-navy">Students</p>
-            <p className="font-bold text-5xl">20</p>
-            <p className="mb-5  text-navy">Hardware Donated</p>
-            <p className="font-bold text-5xl">8</p>
-            <p className="mb-5 text-navy">Schools Partnered With</p>
-        </div>
-      </div>
+      <Hero/>
+      <Impact/>
+      
       <div className="h-screen w-screen bg-white  flex-col md:flex-row md:hidden">
       
         <div className="w-full h-full md:w-1/2 p-10 flex flex-col justify-center items-center">
