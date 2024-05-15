@@ -54,7 +54,7 @@ export default function TestimonialsCarousel() {
                         ) : (
                             <FontAwesomeIcon icon={faUserCircle} className="w-24 h-24 text-gray-400 mx-auto mb-4"/>
                         )}
-                        <p className="text-lg italic ">"{testimonial.text}"</p>
+                        <p className="text-lg italic ">&quot;{testimonial.text}&quot;</p>
                         <p className="mt-4 font-semibold text-blue-500">{testimonial.name}</p>
                     </div>
                 ))}
