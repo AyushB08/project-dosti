@@ -23,22 +23,22 @@ export default function Impact() {
             </div>
             <div className="h-screen w-screen bg-white flex flex-col md:hidden">
                 <div className="w-full h-full md:w-1/2 p-10 flex flex-col justify-center items-center">
-                    <h2 className="text-6xl font-bold text-blue-500">Our Impact</h2>
+                    <h2 className="text-5xl font-bold text-blue-500">Our Impact</h2>
                     <div className="w-full h-full grid grid-cols-2 gap-10 mt-32">
                         <div className="flex flex-col items-center">
-                            <p className="font-bold text-7xl">700</p>
+                            <p className="font-bold text-6xl">700</p>
                             <p className="mb-5 text-2xl text-navy">People</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <p className="font-bold text-7xl">2000</p>
+                            <p className="font-bold text-6xl">2000</p>
                             <p className="mb-5 text-2xl text-navy">Students</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <p className="font-bold text-7xl">20</p>
+                            <p className="font-bold text-6xl">20</p>
                             <p className="mb-5 text-2xl text-navy text-center">Hardware Donated</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <p className="font-bold text-7xl">8</p>
+                            <p className="font-bold text-6xl">8</p>
                             <p className="mb-5 text-2xl text-navy text-center">School Partners</p>
                         </div>
                     </div>
