@@ -4,7 +4,8 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 export default function Contact() {
     return (
         <div id ="contact" className="min-h-screen w-screen bg-dark-blue flex flex-col items-center justify-center">
-            <h1 className="text-white text-5xl md:text-8xl font-bold ">Contact Us</h1>
+            <h1 className="text-white text-5xl md:text-7xl font-bold mt-10">Contact Us</h1>
+            <h2 className="text-blue-500 text-xl md:text-2xl mt-5">We'd love to hear your thoughts!</h2>
 
         
             <div className="bg-white p-8 rounded-lg shadow-lg mt-8 max-w-lg w-4/5">

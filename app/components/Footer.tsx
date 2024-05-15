@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark-blue text-white py-6">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex space-x-6">
+        <div className="flex w-full items-center justify-center space-x-6">
           <a href="#" className="hover:text-gray-400">Home</a>
           <a href="#" className="hover:text-gray-400">Projects</a>
           <a href="#" className="hover:text-gray-400">Team</a>

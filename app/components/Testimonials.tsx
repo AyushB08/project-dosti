@@ -1,3 +1,5 @@
+import TestimonialsCarousel from "./TestimonialsCarousel";
+
 export default function Testimonials() {
     return (
         <div className="h-screen w-screen bg-dark-blue flex flex-col items-center justify-center">
@@ -5,6 +7,7 @@ export default function Testimonials() {
 
 
             <p className="text-blue-500 text-2xl ">Listen to our supporters.</p>
+            <TestimonialsCarousel/>
             
         </div>
     )

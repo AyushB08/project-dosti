@@ -9,7 +9,7 @@ export default function Impact() {
                 
                 </div>
                 <div className="w-full md:w-1/2 p-10 flex flex-col justify-center items-center" >
-                <h2 className="text-5xl font-bold text-blue-500 mb-20">Our Impact</h2>
+                    <h2 className="text-5xl text-center font-bold text-blue-500 mb-20">Our Impact</h2>
                     
                     <p className="font-bold text-5xl">700</p>
                     <p className="mb-5 text-navy">People</p>
@@ -21,34 +21,30 @@ export default function Impact() {
                     <p className="mb-5 text-navy">Schools Partnered With</p>
                 </div>
             </div>
-            <div className="h-screen w-screen bg-white  flex-col md:flex-row md:hidden">
-        
+            <div className="h-screen w-screen bg-white flex flex-col md:hidden">
                 <div className="w-full h-full md:w-1/2 p-10 flex flex-col justify-center items-center">
-                <h2 className="text-7xl font-bold text-blue-500">Our Impact</h2>
-
-                <div className="w-full h-1/2 flex flex-row items-center justify-center space-x-28 mt-20">
-                    <div className="flex flex-col items-center">
-                        <p className=" font-bold text-7xl">700</p>
-                        <p className="mb-5 text-2xl text-navy">People</p>
+                    <h2 className="text-6xl font-bold text-blue-500">Our Impact</h2>
+                    <div className="w-full h-full grid grid-cols-2 gap-10 mt-32">
+                        <div className="flex flex-col items-center">
+                            <p className="font-bold text-7xl">700</p>
+                            <p className="mb-5 text-2xl text-navy">People</p>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <p className="font-bold text-7xl">2000</p>
+                            <p className="mb-5 text-2xl text-navy">Students</p>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <p className="font-bold text-7xl">20</p>
+                            <p className="mb-5 text-2xl text-navy text-center">Hardware Donated</p>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <p className="font-bold text-7xl">8</p>
+                            <p className="mb-5 text-2xl text-navy text-center">School Partners</p>
+                        </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center">
-                        <p className="font-bold text-7xl">2000</p>
-                        <p className="mb-5 text-2xl text-navy ">Students</p>
-                    </div>
-                </div>
-                <div className="w-full h-1/2 flex flex-row items-center justify-center space-x-32">
-                    <div className="flex flex-col items-center justify-center">
-                        <p className="font-bold text-7xl">20</p>
-                        <p className="mb-5 text-2xl text-navy text-center">Hardware Donated</p>
-                    </div>
-                    <div className="flex flex-col items-center justify-center">
-                        <p className="font-bold text-7xl ">8</p>
-                        <p className="mb-5 text-2xl text-navy text-center">School Partners</p>
-                    </div>
-                </div>
-                
                 </div>
             </div>
+
         </>
         
     )
