@@ -1,7 +1,43 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 
 export default function Contact() {
+    const ACCESS_KEY = "";
+    const [result, setResult] = React.useState("");
+
+
+    
+
+    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        
+
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.currentTarget);
+        
+        
+      
+        formData.append("access_key", ACCESS_KEY);
+        
+        
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.currentTarget.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
+
     return (
         <div id ="contact" className="min-h-screen w-screen bg-dark-blue flex flex-col items-center justify-center">
             <h1 className="text-white text-5xl md:text-7xl font-bold mt-10">Contact Us</h1>
@@ -9,18 +45,18 @@ export default function Contact() {
 
         
             <div className="bg-white p-8 rounded-lg shadow-lg mt-8 max-w-lg w-4/5">
-            <form>
+            <form onSubmit={onSubmit}>
                 <div className="mb-4">
                 <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
-                <input type="text" id="name" name="name" className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" />
+                <input required type="text" id="name" name="name" className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" />
                 </div>
                 <div className="mb-4">
                 <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email</label>
-                <input type="email" id="email" name="email" className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" />
+                <input required type="email" id="email" name="email" className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" />
                 </div>
                 <div className="mb-4">
                 <label htmlFor="message" className="block text-gray-700 font-bold mb-2">Message</label>
-                <textarea id="message" name="message" rows={4} className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"></textarea>
+                <textarea required id="message" name="message" rows={4} className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"></textarea>
                 </div>
                 <button type="submit" className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700">Send Message</button>
             </form>
