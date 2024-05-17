@@ -4,12 +4,12 @@ export default function Impact() {
             <div className="h-screen w-screen bg-white  flex-col md:flex-row hidden md:flex">
                 <div className="w-full  md:w-1/2  bg-blue-500 flex flex-col justify-center items-center">
             
-                <div className="bg-blue-900 w-4/5 min-w-64  h-2/5 rounded-lg mt-2 m-2"></div>
-                <div className="bg-blue-900 w-4/5 h-2/5 rounded-lg mt-2 m-2"></div>
+                <div className="bg-blue-900 w-4/5 min-w-64  h-2/5 rounded-lg mt-2 m-2 pop"></div>
+                <div className="bg-blue-900 w-4/5 h-2/5 rounded-lg mt-2 m-2 pop"></div>
                 
                 </div>
                 <div className="w-full md:w-1/2 p-10 flex flex-col justify-center items-center" >
-                    <h2 className="text-5xl text-center font-bold text-blue-500 mb-20">Our Impact</h2>
+                    <h2 className="text-5xl text-center font-bold text-blue-500 mb-20 slideOutTop">Our Impact</h2>
                     
                     <p className="font-bold text-5xl">700</p>
                     <p className="mb-5 text-navy">People</p>
