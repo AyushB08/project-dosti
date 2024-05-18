@@ -11,7 +11,7 @@ export default function Impact() {
                 <div className="w-full md:w-1/2 p-10 flex flex-col justify-center items-center" >
                     <h2 className="text-5xl text-center font-bold text-blue-500 mb-20" data-aos="fade-up">Our Impact</h2>
                     
-                    <div data-aos="fade-in" data-aos-delay="400">
+                    <div className="text-center items-center justify-center" data-aos="fade-in" data-aos-delay="400">
                         <p className="font-bold text-5xl">700</p>
                         <p className="mb-5 text-navy">People</p>
                         <p className="font-bold text-5xl">2000</p>
