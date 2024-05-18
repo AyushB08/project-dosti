@@ -44,7 +44,7 @@ export default function Contact() {
             <h2 className="text-blue-500 text-xl md:text-2xl mt-5">We&apos;d love to hear your thoughts.</h2>
 
         
-            <div className="bg-white p-8 rounded-lg shadow-lg mt-8 max-w-lg w-4/5">
+            <div className="bg-white p-8 rounded-lg shadow-lg mt-8 max-w-lg w-4/5" data-aos="flip-left">
             <form onSubmit={onSubmit}>
                 <div className="mb-4">
                 <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>

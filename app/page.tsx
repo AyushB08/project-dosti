@@ -8,9 +8,18 @@ import Testimonials from "./components/Testimonials";
 import Projects from "./components/Projects";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
-export default function Home() {
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import React from "react";
+import { useEffect } from "react";
 
+export default function Home() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
+    
     <>
       <Navbar
 					pages={
