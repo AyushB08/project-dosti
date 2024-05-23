@@ -1,6 +1,6 @@
 export default function Projects() {
     return (
-        <div id="projects" className="h-screen w-screen bg-white flex flex-col items-center justify-center">
+        <div id="projects" className="h-screen max-w-screen bg-white flex flex-col items-center justify-center">
             <h1 className="text-5xl text-blue-500 font-bold">Our Projects</h1>
             <div className="max-w-6xl mx-auto">
             <section className="mb-8">

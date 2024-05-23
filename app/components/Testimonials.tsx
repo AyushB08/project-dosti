@@ -2,7 +2,7 @@ import TestimonialsCarousel from "./TestimonialsCarousel";
 
 export default function Testimonials() {
     return (
-        <div className="h-screen w-screen bg-dark-blue flex flex-col items-center justify-center">
+        <div className="h-screen max-w-screen bg-dark-blue flex flex-col items-center justify-center">
             <p className="text-white text-7xl mx-10 text-center" data-aos="fade-down">Still Don&apos;t Believe Us?</p>
 
 
