@@ -7,8 +7,8 @@ export default function Impact() {
             <div className="h-screen max-w-screen bg-white flex-col md:flex-row hidden md:flex">
                 
                 <div className="w-full md:w-1/2 bg-blue-500 flex flex-col justify-center items-center">
-                    <Image src="/images/dosti-image-1.jpg" alt="Dosti Image" width={100} height={100}   className="w-4/5 h-2/5 rounded-lg mt-2 m-2 border-2 border-white" data-aos="fade-down-left"/>
-                    <Image src="/images/dosti-image-2.jpg" alt="Dosti Image" width={100} height={100}   className="w-4/5 h-2/5 rounded-lg mt-2 m-2 border-2 border-white" data-aos="fade-up-right"/>
+                    <Image src="/images/dosti-image-1.jpg" alt="Dosti Image" width={100} height={100}   className="w-3/5 h-2/5 rounded-lg mt-2 m-2 border-2 border-white" data-aos="fade-down-left"/>
+                    <Image src="/images/dosti-image-2.jpg" alt="Dosti Image" width={100} height={100}   className="w-3/5 h-2/5 rounded-lg mt-2 m-2 border-2 border-white" data-aos="fade-up-right"/>
                 
                 
                 </div>
